@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D0D2C2A"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/emailinput"
+        android:layout_width="332dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="416dp"
+        android:ems="10"
+        android:hint="Please enter your mail here."
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordinput"
+        android:layout_width="332dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="391dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="336dp"
+        android:ems="10"
+        android:hint=" Please enter your password here."
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="223dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="501dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="231dp"
+        android:text="LOG IN"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logintextview"
+        android:layout_width="342dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="557dp"
+        android:text="LOG IN"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

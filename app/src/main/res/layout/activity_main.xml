@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/email"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D0D2C2A"
+    android:gravity="center"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="289dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="273dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="361dp"
+        android:text="LOG IN"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="284dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="417dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="204dp"
+        android:text="SIGN UP"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcometextview"
+        android:layout_width="343dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="518dp"
+        android:text="WELCOME!"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
