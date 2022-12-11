@@ -39,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                     if(checkUserPass == true){
                         Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                        intent.putExtra("mail", userMail);
                         startActivity(intent);
                     }
                     else{

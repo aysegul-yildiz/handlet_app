@@ -11,6 +11,7 @@ public class HomeActivity extends AppCompatActivity {
 
     ImageButton profileb, chatb, searchb, helpbtn, settingbtn, additembtn;
     String mail;
+    User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,8 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
-                startActivity(intent);
                 intent.putExtra("mail", mail);
+                startActivity(intent);
             }
         });
 

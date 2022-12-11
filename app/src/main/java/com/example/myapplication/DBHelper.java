@@ -65,8 +65,11 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public User getUser(String mail){
         SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from users where mail=?", new String[] {mail});
 
-        return (User)values.get(mail);
+        User user = new User( mail, "a", "b" );
+
+        return user;
     }
 
 

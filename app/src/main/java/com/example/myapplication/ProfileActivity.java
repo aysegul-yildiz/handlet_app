@@ -24,6 +24,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         usermail = intent.getStringExtra("mail");
+        user= (User) DB.getUser(usermail);
 
         searchb = (ImageButton) findViewById(R.id.searchbtn);
         chatb = (ImageButton) findViewById(R.id.chatbtn);
@@ -35,10 +36,9 @@ public class ProfileActivity extends AppCompatActivity {
         name = (TextView) findViewById(R.id.name);
         mail = (TextView) findViewById(R.id.mail);
 
-        //user = DB.getUser(usermail);
 
-        //name.setText(user.getName());
-        //mail.setText(user.getMail());
+        name.setText(user.getName());
+        mail.setText(user.getMail());
 
         searchb.setOnClickListener(new View.OnClickListener() {
             @Override
